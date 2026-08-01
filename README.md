@@ -97,31 +97,6 @@ Run the automated leakage checks:
 .\.venv\Scripts\python -m unittest discover -s tests -v
 ```
 
-Rebuild the notebook source files when the shared template changes:
-
-```powershell
-.\.venv\Scripts\python scripts\build_notebooks.py
-```
-
-Rebuild only the standalone TCN experiment without touching the other notebooks:
-
-```powershell
-.\.venv\Scripts\python scripts\build_tcn_notebook.py
-```
-
-Rebuild only the two model-comparison notebooks without touching executed outputs
-in the historical notebooks:
-
-```powershell
-.\.venv\Scripts\python scripts\build_model_comparison_notebooks.py
-```
-
-Rebuild the standalone, self-contained Kaggle competition notebook:
-
-```powershell
-.\.venv\Scripts\python scripts\build_competition_submission_notebook.py
-```
-
 The comparison notebooks write compact CSV tables to
 `results/model_comparison/<dataset>/<profile>/` when you execute their final save cell.
 
