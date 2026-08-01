@@ -1,0 +1,3 @@
+{
+    "python.defaultInterpreterPath": "${env:HOME}/.venvs/dissertation-gpu/bin/python"
+}

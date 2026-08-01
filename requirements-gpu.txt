@@ -1,0 +1,6 @@
+# WSL2/NVIDIA environment for the fair model-comparison notebooks.
+-r requirements.txt
+
+# TensorFlow 2.17 has no native-Windows CUDA build. The Linux extra installs
+# the matching CUDA 12 and cuDNN runtime wheels inside the isolated WSL venv.
+tensorflow[and-cuda]==2.17.0; platform_system == "Linux"

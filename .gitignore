@@ -1,0 +1,28 @@
+train/
+test/
+dataset_fog_release/
+Journals/
+*.h5
+*.pdf
+*.docx
+*.png
+*.zip
+*.csv
+
+# Local Python and notebook artifacts
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+
+# Large raw datasets remain local
+data/raw/
+
+# Keep the small, versioned metadata tables visible to Git
+!data/metadata/
+!data/metadata/*.csv
+!data/submissions/
+!data/submissions/sample_submission.csv
+
+# Optional newly exported model artifacts
+models/artifacts/
