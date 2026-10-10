@@ -1,0 +1,73 @@
+{
+  "feature_configuration": {
+    "feature_version": "dense_temporal_spectral_v2",
+    "sample_hz": 128,
+    "training_stride": 16,
+    "windows": [
+      64,
+      256,
+      1024
+    ],
+    "band_windows": [
+      256,
+      1024
+    ],
+    "max_iter": 220,
+    "learning_rate": 0.07,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 100,
+    "l2_regularization": 10.0,
+    "max_bins": 128,
+    "positive_weight_cap": 8.0,
+    "seed": 42,
+    "cpu_threads": 4
+  },
+  "model_parameters": {
+    "learning_rate": 0.07,
+    "max_iter": 260,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 200,
+    "l2_regularization": 20.0,
+    "max_bins": 128,
+    "early_stopping": false
+  },
+  "fft_windows": [
+    256,
+    1024
+  ],
+  "fft_range_hz": [
+    0.5,
+    15
+  ],
+  "context_shifts_native_rows": [
+    -256,
+    -64,
+    64,
+    256
+  ],
+  "fixed_blends": {
+    "neural_dense_equal": {
+      "previous_tdcs_blend": 0.5,
+      "dense_context_hgb": 0.5
+    },
+    "retained_dense_quarter": {
+      "retained_neural_hgb": 0.75,
+      "dense_context_hgb": 0.25
+    },
+    "retained_dense_equal": {
+      "retained_neural_hgb": 0.5,
+      "dense_context_hgb": 0.5
+    }
+  },
+  "positive_weight": "sqrt(negative/positive), cap 8, training labels only",
+  "sensor_input_fingerprint": "b6a2353c90444bcfd32d",
+  "source_hashes": {
+    "tdcs_dense_context_experiment.py": "7877338e575f9cc824a5ab9227f7ec1ce6ce4d7b1f240e71bfba3a07bff96ba4",
+    "tdcs_multiscale_signal_experiment.py": "6606266f2147cd76a66474cdf27aeb123cab32d55022f4272e05afe46f408d51",
+    "tdcs_candidate_sweep.py": "be2744bae97dc2cec64746e3d27ae645da065a7b52f8a29ecd64d42da5c479c4"
+  },
+  "sklearn_version": "1.8.0",
+  "numpy_version": "1.26.4",
+  "reference_mAP": 0.3800059184564884,
+  "selection_caveat": "development folds reused across experiments; exploratory selection"
+}

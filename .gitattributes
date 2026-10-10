@@ -1,0 +1,4 @@
+# Keep TDCS source fingerprints stable across Windows and Linux checkouts.
+scripts/tdcs_*.py text eol=lf
+scripts/validate_tdcs*.py text eol=lf
+scripts/execute_tdcs_notebook.py text eol=lf

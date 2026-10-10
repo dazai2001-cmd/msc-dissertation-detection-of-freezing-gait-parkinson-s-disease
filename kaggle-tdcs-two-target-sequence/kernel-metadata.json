@@ -1,0 +1,16 @@
+{
+  "id": "howtomakepplragequit/tdcs-two-target-sequence-v1",
+  "title": "TDCS Two Target Sequence v1",
+  "code_file": "tdcs_two_target_neural_training.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "enable_internet": false,
+  "competition_sources": [
+    "tlvmc-parkinsons-freezing-gait-prediction"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": []
+}

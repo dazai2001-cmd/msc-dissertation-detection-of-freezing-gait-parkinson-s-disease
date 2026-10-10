@@ -1,0 +1,12 @@
+{
+  "run_dir": "D:\\Dissertation\\results\\tdcs_dense_context\\e1844437c340c0b75d39",
+  "selected_candidate_dir": "D:\\Dissertation\\results\\tdcs_dense_context\\e1844437c340c0b75d39\\selected_candidate",
+  "selected_method": "retained_dense_equal",
+  "candidate_tdcs_oof_map": 0.3876756908850407,
+  "retained_reference_tdcs_oof_map": 0.3800059184564884,
+  "delta": 0.007669772428552324,
+  "decision": "retain new TDCS candidate",
+  "retained_defog_reported_oof_map": 0.817,
+  "competition_submission_created": false,
+  "selection_scope": "one new model and three fixed blends on reused development folds"
+}

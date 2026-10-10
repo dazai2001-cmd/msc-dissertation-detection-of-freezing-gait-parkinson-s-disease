@@ -1,0 +1,43 @@
+{
+  "domain": "tdcsfog",
+  "targets": ["StartHesitation", "Walking"],
+  "method": "hesitation_dense_90_walking_retained",
+  "two_target_development_mAP": 0.19629988455476777,
+  "two_target_reference_mAP": 0.18722199642404308,
+  "delta_two_target_mAP": 0.009077888130724687,
+  "class_average_precision": {
+    "StartHesitation": 0.20870336814353063,
+    "Walking": 0.18389640096600487
+  },
+  "target_weights": {
+    "StartHesitation": {"neural": 0.05, "multiscale_hgb": 0.05, "dense_context_hgb": 0.90},
+    "Walking": {"neural": 0.25, "multiscale_hgb": 0.25, "dense_context_hgb": 0.50}
+  },
+  "neural_member": "Equal patch-BiLSTM / engineered BiGRU; historical three-output training, two retained outputs only",
+  "turn_specialist_loaded": false,
+  "turn_output_removed": true,
+  "turn_only_negative_rows_retained": true,
+  "confidence_status": "Independent uncalibrated 0-1 scores; not mutually exclusive, not clinical certainty",
+  "hesitation_confidence_warning": "Ranking improved but mean score 0.0050 underestimates prevalence 0.0438; Brier/log loss worsened",
+  "fresh_two_head_neural_model_trained": false,
+  "old_three_target_mAP_not_comparable": true,
+  "old_three_class_model_preserved": true,
+  "run_directory": "D:/Dissertation/results/tdcs_two_target/0bc6253ac0686c819425",
+  "native_oof_directory": "D:/Dissertation/results/tdcs_two_target/0bc6253ac0686c819425/selected_ensemble",
+  "independent_validation": "D:/Dissertation/results/tdcs_two_target/0bc6253ac0686c819425/selected_ensemble/validation.json",
+  "notebook": "D:/Dissertation/notebooks/tdcs_start_hesitation_walking_ensemble.ipynb",
+  "notebook_execution_status": "passed: 9 code cells, 2 PNG outputs, 0 errors",
+  "tests_passed": 27,
+  "plots_visually_checked": true,
+  "full_notebook_layout_preview_checked": false,
+  "native_rows": 6959762,
+  "recordings": 815,
+  "subjects": 61,
+  "subject_disjoint_folds": 5,
+  "independent_generalization_established": false,
+  "selection_scope": "Three bounded class-specific ensembles on reused development folds",
+  "retained_defog_reported_oof_map": 0.817,
+  "competition_submission_created": false,
+  "leaderboard_scoring_used": false,
+  "verified_utc": "2026-10-06 11:44:31 UTC"
+}

@@ -1,0 +1,63 @@
+{
+  "targets": [
+    "StartHesitation",
+    "Walking"
+  ],
+  "members": [
+    "neural",
+    "multiscale_hgb",
+    "dense_context_hgb"
+  ],
+  "fixed_candidates": {
+    "current_model_two_target_reference": {
+      "StartHesitation": [
+        0.25,
+        0.25,
+        0.5
+      ],
+      "Walking": [
+        0.25,
+        0.25,
+        0.5
+      ]
+    },
+    "hesitation_dense_80_walking_retained": {
+      "StartHesitation": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "Walking": [
+        0.25,
+        0.25,
+        0.5
+      ]
+    },
+    "hesitation_dense_90_walking_retained": {
+      "StartHesitation": [
+        0.05,
+        0.05,
+        0.9
+      ],
+      "Walking": [
+        0.25,
+        0.25,
+        0.5
+      ]
+    }
+  },
+  "sensor_run": "D:\\Dissertation\\results\\tdcs_multiscale_signal\\b6a2353c90444bcfd32d",
+  "dense_run": "D:\\Dissertation\\results\\tdcs_dense_context\\e1844437c340c0b75d39",
+  "source_sha256": "2839165f417557a0e100a8231a1e709de982edaaafdcdb01cb5bc83c7cb56047",
+  "source_files": {
+    "three_class_registry": "15b84195443164973b9c0184351a9ddaeab431dcfd28f9ecf772bab0966cf658",
+    "frozen_manifest": "05aaa602fe929e7e578680909410ddc8d3a7a2a859638feadcdd024ff99351b2"
+  },
+  "confidence_output": "two independent uncalibrated 0-1 model scores, no softmax",
+  "calibrator_fit": false,
+  "selection_scope": "Exploratory fixed class-specific blends; repeatedly reused development folds",
+  "historical_neural_training": "Existing BiGRU and patch BiLSTM originally learned three outputs; projected to SH/Walking",
+  "turn_specialist_loaded": false,
+  "turn_only_rows_dropped": false,
+  "held_out_subject_labels_used_for_fitting": false
+}

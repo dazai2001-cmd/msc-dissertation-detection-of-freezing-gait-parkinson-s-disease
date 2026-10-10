@@ -1,0 +1,31 @@
+{
+  "run_dir": "D:\\Dissertation\\results\\tdcs_two_target\\0bc6253ac0686c819425",
+  "selected_candidate_dir": "D:\\Dissertation\\results\\tdcs_two_target\\0bc6253ac0686c819425\\selected_ensemble",
+  "selected_method": "hesitation_dense_90_walking_retained",
+  "target_weights": {
+    "StartHesitation": [
+      0.05,
+      0.05,
+      0.9
+    ],
+    "Walking": [
+      0.25,
+      0.25,
+      0.5
+    ]
+  },
+  "two_target_mAP": 0.19629988455476766,
+  "two_target_reference_mAP": 0.18722199642404308,
+  "delta_two_target_mAP": 0.009077888130724576,
+  "class_average_precision": {
+    "StartHesitation": 0.20870336814353063,
+    "Walking": 0.1838964009660047
+  },
+  "confidence_status": "Uncalibrated model scores; calibration diagnostics reported, no certainty claim",
+  "old_three_target_mAP_is_not_comparable": true,
+  "old_three_class_model_unchanged": true,
+  "retained_defog_reported_oof_map": 0.817,
+  "competition_submission_created": false,
+  "leaderboard_scoring_used": false,
+  "independent_generalization_established": false
+}

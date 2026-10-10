@@ -29,3 +29,26 @@ data/raw/
 
 # Optional newly exported model artifacts
 models/artifacts/
+
+# Local training outputs; selected lightweight best-result receipts are tracked
+/kaggle-output/
+/kaggle-v4-output*/
+/kaggle-submission/
+/kaggle-inference-assets/
+/tmp/
+/results/*
+!/results/tdcs_current_best.json
+!/results/tdcs_two_target_current_best.json
+!/results/tdcs_two_target_neural_launch.json
+*.npz
+*.npy
+*.pt
+*.pth
+*.ckpt
+*.joblib
+*.cbm
+*.keras
+*.hdf5
+.env
+.env.*
+kaggle.json

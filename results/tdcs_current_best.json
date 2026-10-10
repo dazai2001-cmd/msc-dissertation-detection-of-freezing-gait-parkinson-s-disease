@@ -1,0 +1,34 @@
+{
+  "domain": "tdcsfog",
+  "method": "retained_dense_equal",
+  "pooled_native_row_oof_map": 0.3876756908850407,
+  "class_average_precision": {
+    "StartHesitation": 0.19054759188208137,
+    "Turn": 0.788583079807036,
+    "Walking": 0.18389640096600487
+  },
+  "previous_reference_map": 0.3800059184564884,
+  "delta": 0.007669772428552324,
+  "blend_weights": {
+    "previous_tdcs_neural_blend": 0.25,
+    "original_multiscale_sensor_hgb": 0.25,
+    "dense_temporal_spectral_hgb": 0.5
+  },
+  "run_directory": "D:/Dissertation/results/tdcs_dense_context/e1844437c340c0b75d39",
+  "native_oof_directory": "D:/Dissertation/results/tdcs_dense_context/e1844437c340c0b75d39/selected_candidate",
+  "independent_validation": "D:/Dissertation/results/tdcs_dense_context/e1844437c340c0b75d39/selected_candidate/validation.json",
+  "notebook": "D:/Dissertation/notebooks/tdcs_dense_context_experiment.ipynb",
+  "notebook_execution_status": "passed",
+  "comparison_figures_visually_checked": true,
+  "full_notebook_layout_preview_checked": false,
+  "native_rows": 6959762,
+  "recordings": 815,
+  "subjects": 61,
+  "subject_disjoint_folds": 5,
+  "model_selection_scope": "Exploratory development OOF; the same folds were reused for successive model selection.",
+  "independent_generalization_established": false,
+  "retained_defog_reported_oof_map": 0.817,
+  "competition_submission_created": false,
+  "leaderboard_scoring_used": false,
+  "verified_utc": "2026-10-06 11:25:37 UTC"
+}

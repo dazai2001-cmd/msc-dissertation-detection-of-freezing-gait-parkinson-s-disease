@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "native_rows": 6959762,
+  "recordings": 815,
+  "subjects": 61,
+  "prediction_ids_exact_match": true,
+  "subject_disjoint": true,
+  "independent_rank_based_AP": {
+    "StartHesitation": 0.19054759188208137,
+    "Turn": 0.788583079807036,
+    "Walking": 0.18389640096600487,
+    "mAP": 0.3876756908850407
+  },
+  "fold_positive_rows": {
+    "0": {
+      "StartHesitation": 239789,
+      "Turn": 685355,
+      "Walking": 143269
+    },
+    "1": {
+      "StartHesitation": 14606,
+      "Turn": 283383,
+      "Walking": 31959
+    },
+    "2": {
+      "StartHesitation": 19549,
+      "Turn": 193472,
+      "Walking": 15904
+    },
+    "3": {
+      "StartHesitation": 23918,
+      "Turn": 255731,
+      "Walking": 4729
+    },
+    "4": {
+      "StartHesitation": 6928,
+      "Turn": 256602,
+      "Walking": 11654
+    }
+  }
+}

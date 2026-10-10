@@ -1,0 +1,15 @@
+{
+  "domain": "tdcsfog",
+  "recordings": 815,
+  "subjects": 61,
+  "native_rows": 6959762,
+  "sampled_training_rows": 436128,
+  "feature_count": 213,
+  "training_stride": 16,
+  "validation": "same five frozen subject-disjoint folds; outer labels used for scoring only",
+  "feature_inputs": "accelerometer and recording timing only",
+  "offline_assumption": "centered spectra, past/future context and whole-record normalization",
+  "retained_defog_reported_oof_map": 0.817,
+  "competition_submission_created": false,
+  "model_selection_caveat": "development folds reused across experiments; exploratory selection"
+}
