@@ -1,0 +1,71 @@
+{
+  "status": "Kaggle_M23_QUEUED_S12_RUNNING",
+  "pushed_at_utc": "2026-11-24 05:16:15",
+  "latest_status_check_utc": "2026-11-24 05:19:15",
+  "remote_sources_private_T4_inputs_match_tested_notebooks": true,
+  "full_TDCS_regression_tests_passed": 918,
+  "targeted_post_audit_tests_passed": 29,
+  "eligible_fitting_subject_counts_by_fold": [
+    {
+      "StartHesitation": 23,
+      "Turn": 32,
+      "Walking": 17
+    },
+    {
+      "StartHesitation": 24,
+      "Turn": 32,
+      "Walking": 17
+    },
+    {
+      "StartHesitation": 23,
+      "Turn": 32,
+      "Walking": 16
+    },
+    {
+      "StartHesitation": 24,
+      "Turn": 32,
+      "Walking": 16
+    },
+    {
+      "StartHesitation": 22,
+      "Turn": 32,
+      "Walking": 18
+    }
+  ],
+  "effective_source_sha256": "f25b3b8328204ea0ddccd3795a1373a7f36559e594e0a5d186c6b25be7b23a1b",
+  "suites": {
+    "metadata": {
+      "only_fit": [
+        "M23"
+      ],
+      "version": 5,
+      "latest_confirmed_status": "QUEUED",
+      "previous_version": 4,
+      "synthetic_code_cells": 33,
+      "tested_notebook_sha256": "b9df694eda0cf10e21cf3e31bebbb5525af28da40dba78b22c7324069aa89ddd",
+      "staged_notebook_sha256": "07859e1d12d63c9e0af2d0bc2c2ef3e07d6e2df7f9ec98f12c62418579ffdaf8"
+    },
+    "sensor": {
+      "only_fit": [
+        "S12"
+      ],
+      "version": 7,
+      "latest_confirmed_status": "RUNNING",
+      "startup_log": {
+        "warmup_updates_completed": 512,
+        "auxiliary_typed_plus_weak_files": 137,
+        "fold_0_fine_tune_updates_observed": 256,
+        "eligible_microbatches_observed": 307,
+        "microbatches_observed": 1024,
+        "score_available": false
+      },
+      "previous_version": 6,
+      "synthetic_code_cells": 24,
+      "tested_notebook_sha256": "621464301863e7e29ea7b1f5099846b75152b20372731dd15caf1c0c4ed9d018",
+      "staged_notebook_sha256": "8090d2f911865dfd409e59a99b5782d00f6eb5551ba6b8c6ee5e81e296b51163"
+    }
+  },
+  "retained_heads_changed": false,
+  "competition_submission_created": false,
+  "real_training": "Kaggle CUDA only"
+}

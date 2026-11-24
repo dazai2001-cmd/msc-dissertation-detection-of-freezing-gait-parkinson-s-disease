@@ -1,0 +1,59 @@
+{
+  "status": "predeclared_before_v31_Kaggle_fitting",
+  "date": "2026-11-24",
+  "controls": {
+    "M23": "M22 weak Event warmup, change only two fine-tune crop slots",
+    "S12": "same matched crop stream as M23, add the S11 rank loss"
+  },
+  "hypothesis": "More training batches should contain both rare Walking and the confusable StartHesitation/Turn contexts; incremental ranking is a separate contrast",
+  "paired_crop_positions": [
+    0,
+    1
+  ],
+  "paired_crop_targets": [
+    "Walking",
+    "alternating Turn and StartHesitation"
+  ],
+  "event_scope": "outer training subjects, uniform subject, uniform contiguous event with at least 3 valid 50 Hz positions, uniform interior center",
+  "original_natural_crops_per_batch": 6,
+  "pair_rng_seed_offset": 81731,
+  "rank_weight_S12_only": 0.2,
+  "rank_margin_log_odds": 0.2,
+  "hard_negatives_per_microbatch": 16,
+  "auxiliary_bootstrap": "M22 recipe: 91 typed plus 46 weak Event training recordings, Valid AND Task, five outer-fold exclusion via disjoint auxiliary subjects",
+  "matched_warmup_refits_not_bitwise_GPU_claim": true,
+  "warm_updates": 512,
+  "fine_tune_updates_per_fold": 1536,
+  "batch_size": 8,
+  "microbatch_size": 2,
+  "frozen_outer_folds": 5,
+  "native_rows": 6959762,
+  "all_negative_rows_in_evaluation": true,
+  "heldout_labels_used_for_pairing_or_stopping": false,
+  "reference_registry": "results/tdcs_two_target_current_best.json",
+  "reference_registry_sha256": "2ba9047d5d33d87f20d4c433323102eae8dc6f837e362be4eca0fcfa362b5ad5",
+  "models": [
+    "M23",
+    "S12"
+  ],
+  "weights": [
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "StartHesitation_postprocessing": [
+    "ungated"
+  ],
+  "Walking_postprocessing": [
+    "ungated",
+    "frozen_Walking_gate_once"
+  ],
+  "total_target_weight_comparisons": 24,
+  "prior_proposal": "summary.json",
+  "primary_comparison": "ungated pooled native Walking AP on the same frozen folds; report both targets and fold AP",
+  "automatic_promotion": false,
+  "competition_submission": false,
+  "fit_only_on_private_Kaggle_GPU": true,
+  "max_simultaneous_Kaggle_jobs": 2
+}
