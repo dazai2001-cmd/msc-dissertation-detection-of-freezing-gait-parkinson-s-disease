@@ -1,0 +1,451 @@
+{
+  "status": "native_AP_audited_replay_pending",
+  "id": "S12",
+  "source_version": 7,
+  "native_rows": 6959762,
+  "all_negative_records_included": true,
+  "metrics": {
+    "ungated": {
+      "StartHesitation": 0.18669549335832178,
+      "Walking": 0.21253670594987303,
+      "two_target_mAP": 0.1996160996540974
+    },
+    "frozen_Walking_gate_once": {
+      "StartHesitation": 0.18669549335832178,
+      "Walking": 0.19545865561618495,
+      "two_target_mAP": 0.19107707448725336
+    }
+  },
+  "ungated_folds": [
+    {
+      "fold": 0,
+      "StartHesitation": 0.30077864843249374,
+      "Walking": 0.2551864002357771
+    },
+    {
+      "fold": 1,
+      "StartHesitation": 0.3023121782900345,
+      "Walking": 0.3268882257870116
+    },
+    {
+      "fold": 2,
+      "StartHesitation": 0.6123988674544785,
+      "Walking": 0.22162335667309985
+    },
+    {
+      "fold": 3,
+      "StartHesitation": 0.13807106253557866,
+      "Walking": 0.04597052927391635
+    },
+    {
+      "fold": 4,
+      "StartHesitation": 0.10782524077285398,
+      "Walking": 0.1681100990519867
+    }
+  ],
+  "saved_model_replay": false,
+  "eligible_microbatches": 9198,
+  "total_microbatches": 30720,
+  "predeclared_blends": [
+    {
+      "target": "StartHesitation",
+      "postprocessing": "ungated",
+      "weight": 0.1,
+      "AP": 0.5667793088258443,
+      "folds": [
+        {
+          "fold": 0,
+          "reference_AP": 0.6537468062379824,
+          "blend_AP": 0.6472266795620445
+        },
+        {
+          "fold": 1,
+          "reference_AP": 0.39296474405822657,
+          "blend_AP": 0.408056814702941
+        },
+        {
+          "fold": 2,
+          "reference_AP": 0.1462042791218982,
+          "blend_AP": 0.4827737581588272
+        },
+        {
+          "fold": 3,
+          "reference_AP": 0.3919817371666952,
+          "blend_AP": 0.36481666346836517
+        },
+        {
+          "fold": 4,
+          "reference_AP": 0.08608175831067438,
+          "blend_AP": 0.09573932271376517
+        }
+      ]
+    },
+    {
+      "target": "StartHesitation",
+      "postprocessing": "ungated",
+      "weight": 0.25,
+      "AP": 0.5297830148224761,
+      "folds": [
+        {
+          "fold": 0,
+          "reference_AP": 0.6537468062379824,
+          "blend_AP": 0.634418018778064
+        },
+        {
+          "fold": 1,
+          "reference_AP": 0.39296474405822657,
+          "blend_AP": 0.38896194186154287
+        },
+        {
+          "fold": 2,
+          "reference_AP": 0.1462042791218982,
+          "blend_AP": 0.5816121730254717
+        },
+        {
+          "fold": 3,
+          "reference_AP": 0.3919817371666952,
+          "blend_AP": 0.28724924672560465
+        },
+        {
+          "fold": 4,
+          "reference_AP": 0.08608175831067438,
+          "blend_AP": 0.10521519337802325
+        }
+      ]
+    },
+    {
+      "target": "StartHesitation",
+      "postprocessing": "ungated",
+      "weight": 0.5,
+      "AP": 0.41018248927428225,
+      "folds": [
+        {
+          "fold": 0,
+          "reference_AP": 0.6537468062379824,
+          "blend_AP": 0.5932524587975659
+        },
+        {
+          "fold": 1,
+          "reference_AP": 0.39296474405822657,
+          "blend_AP": 0.36224515706305066
+        },
+        {
+          "fold": 2,
+          "reference_AP": 0.1462042791218982,
+          "blend_AP": 0.60437946640683
+        },
+        {
+          "fold": 3,
+          "reference_AP": 0.3919817371666952,
+          "blend_AP": 0.17492511979547298
+        },
+        {
+          "fold": 4,
+          "reference_AP": 0.08608175831067438,
+          "blend_AP": 0.11569913546609017
+        }
+      ]
+    },
+    {
+      "target": "StartHesitation",
+      "postprocessing": "ungated",
+      "weight": 1.0,
+      "AP": 0.18669549335832178,
+      "folds": [
+        {
+          "fold": 0,
+          "reference_AP": 0.6537468062379824,
+          "blend_AP": 0.30077864843249374
+        },
+        {
+          "fold": 1,
+          "reference_AP": 0.39296474405822657,
+          "blend_AP": 0.3023121782900345
+        },
+        {
+          "fold": 2,
+          "reference_AP": 0.1462042791218982,
+          "blend_AP": 0.6123988674544785
+        },
+        {
+          "fold": 3,
+          "reference_AP": 0.3919817371666952,
+          "blend_AP": 0.13807106253557866
+        },
+        {
+          "fold": 4,
+          "reference_AP": 0.08608175831067438,
+          "blend_AP": 0.10782524077285398
+        }
+      ]
+    },
+    {
+      "target": "Walking",
+      "postprocessing": "ungated",
+      "weight": 0.1,
+      "AP": 0.2872963513476676,
+      "folds": [
+        {
+          "fold": 0,
+          "reference_AP": 0.3241533172405091,
+          "blend_AP": 0.34022624432693027
+        },
+        {
+          "fold": 1,
+          "reference_AP": 0.2153829620580125,
+          "blend_AP": 0.3200762314883008
+        },
+        {
+          "fold": 2,
+          "reference_AP": 0.03240656326230977,
+          "blend_AP": 0.17486038194554931
+        },
+        {
+          "fold": 3,
+          "reference_AP": 0.012652898448268458,
+          "blend_AP": 0.03764045352141366
+        },
+        {
+          "fold": 4,
+          "reference_AP": 0.10448867365010654,
+          "blend_AP": 0.14696803948002934
+        }
+      ]
+    },
+    {
+      "target": "Walking",
+      "postprocessing": "ungated",
+      "weight": 0.25,
+      "AP": 0.265950608170486,
+      "folds": [
+        {
+          "fold": 0,
+          "reference_AP": 0.3241533172405091,
+          "blend_AP": 0.310005337933709
+        },
+        {
+          "fold": 1,
+          "reference_AP": 0.2153829620580125,
+          "blend_AP": 0.35287422099965604
+        },
+        {
+          "fold": 2,
+          "reference_AP": 0.03240656326230977,
+          "blend_AP": 0.2002778567299185
+        },
+        {
+          "fold": 3,
+          "reference_AP": 0.012652898448268458,
+          "blend_AP": 0.04573322068145794
+        },
+        {
+          "fold": 4,
+          "reference_AP": 0.10448867365010654,
+          "blend_AP": 0.16438347417987242
+        }
+      ]
+    },
+    {
+      "target": "Walking",
+      "postprocessing": "ungated",
+      "weight": 0.5,
+      "AP": 0.25376703899469244,
+      "folds": [
+        {
+          "fold": 0,
+          "reference_AP": 0.3241533172405091,
+          "blend_AP": 0.296887742731458
+        },
+        {
+          "fold": 1,
+          "reference_AP": 0.2153829620580125,
+          "blend_AP": 0.3511655281648593
+        },
+        {
+          "fold": 2,
+          "reference_AP": 0.03240656326230977,
+          "blend_AP": 0.21389261612792881
+        },
+        {
+          "fold": 3,
+          "reference_AP": 0.012652898448268458,
+          "blend_AP": 0.04435502345979606
+        },
+        {
+          "fold": 4,
+          "reference_AP": 0.10448867365010654,
+          "blend_AP": 0.17369403507756356
+        }
+      ]
+    },
+    {
+      "target": "Walking",
+      "postprocessing": "ungated",
+      "weight": 1.0,
+      "AP": 0.21253670594987303,
+      "folds": [
+        {
+          "fold": 0,
+          "reference_AP": 0.3241533172405091,
+          "blend_AP": 0.2551864002357771
+        },
+        {
+          "fold": 1,
+          "reference_AP": 0.2153829620580125,
+          "blend_AP": 0.3268882257870116
+        },
+        {
+          "fold": 2,
+          "reference_AP": 0.03240656326230977,
+          "blend_AP": 0.22162335667309985
+        },
+        {
+          "fold": 3,
+          "reference_AP": 0.012652898448268458,
+          "blend_AP": 0.04597052927391635
+        },
+        {
+          "fold": 4,
+          "reference_AP": 0.10448867365010654,
+          "blend_AP": 0.1681100990519867
+        }
+      ]
+    },
+    {
+      "target": "Walking",
+      "postprocessing": "frozen_Walking_gate_once",
+      "weight": 0.1,
+      "AP": 0.278074740872516,
+      "folds": [
+        {
+          "fold": 0,
+          "reference_AP": 0.3241533172405091,
+          "blend_AP": 0.33855183934677585
+        },
+        {
+          "fold": 1,
+          "reference_AP": 0.2153829620580125,
+          "blend_AP": 0.30238916963992174
+        },
+        {
+          "fold": 2,
+          "reference_AP": 0.03240656326230977,
+          "blend_AP": 0.05686401496720155
+        },
+        {
+          "fold": 3,
+          "reference_AP": 0.012652898448268458,
+          "blend_AP": 0.019319074466199744
+        },
+        {
+          "fold": 4,
+          "reference_AP": 0.10448867365010654,
+          "blend_AP": 0.12575922406183673
+        }
+      ]
+    },
+    {
+      "target": "Walking",
+      "postprocessing": "frozen_Walking_gate_once",
+      "weight": 0.25,
+      "AP": 0.2622432113460842,
+      "folds": [
+        {
+          "fold": 0,
+          "reference_AP": 0.3241533172405091,
+          "blend_AP": 0.3094021079284369
+        },
+        {
+          "fold": 1,
+          "reference_AP": 0.2153829620580125,
+          "blend_AP": 0.3607331185205057
+        },
+        {
+          "fold": 2,
+          "reference_AP": 0.03240656326230977,
+          "blend_AP": 0.0929028727102956
+        },
+        {
+          "fold": 3,
+          "reference_AP": 0.012652898448268458,
+          "blend_AP": 0.025306500530252494
+        },
+        {
+          "fold": 4,
+          "reference_AP": 0.10448867365010654,
+          "blend_AP": 0.1465668914494035
+        }
+      ]
+    },
+    {
+      "target": "Walking",
+      "postprocessing": "frozen_Walking_gate_once",
+      "weight": 0.5,
+      "AP": 0.24291937105397304,
+      "folds": [
+        {
+          "fold": 0,
+          "reference_AP": 0.3241533172405091,
+          "blend_AP": 0.28028111193556277
+        },
+        {
+          "fold": 1,
+          "reference_AP": 0.2153829620580125,
+          "blend_AP": 0.3764592095325094
+        },
+        {
+          "fold": 2,
+          "reference_AP": 0.03240656326230977,
+          "blend_AP": 0.13500065126620311
+        },
+        {
+          "fold": 3,
+          "reference_AP": 0.012652898448268458,
+          "blend_AP": 0.02819575319408416
+        },
+        {
+          "fold": 4,
+          "reference_AP": 0.10448867365010654,
+          "blend_AP": 0.16477605879881874
+        }
+      ]
+    },
+    {
+      "target": "Walking",
+      "postprocessing": "frozen_Walking_gate_once",
+      "weight": 1.0,
+      "AP": 0.19545865561618495,
+      "folds": [
+        {
+          "fold": 0,
+          "reference_AP": 0.3241533172405091,
+          "blend_AP": 0.23780868997188037
+        },
+        {
+          "fold": 1,
+          "reference_AP": 0.2153829620580125,
+          "blend_AP": 0.3542967561447975
+        },
+        {
+          "fold": 2,
+          "reference_AP": 0.03240656326230977,
+          "blend_AP": 0.17769598874772796
+        },
+        {
+          "fold": 3,
+          "reference_AP": 0.012652898448268458,
+          "blend_AP": 0.02745693508816642
+        },
+        {
+          "fold": 4,
+          "reference_AP": 0.10448867365010654,
+          "blend_AP": 0.16733053933637815
+        }
+      ]
+    }
+  ],
+  "best_exploratory_two_target_mAP": 0.45032877476688316,
+  "retained_heads_changed": false,
+  "independent_generalization_established": false,
+  "M23": "not_yet_audited_at_this_checkpoint"
+}

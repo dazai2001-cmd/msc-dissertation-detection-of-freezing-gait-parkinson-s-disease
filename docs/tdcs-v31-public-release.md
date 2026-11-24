@@ -1,7 +1,7 @@
 # TDCS experiments through v31
 
 [Metadata suite (M00–M23)](../notebooks/tdcs_metadata_comprehensive_v26_public.ipynb) ·
-[Sensor suite (S00–S12)](../notebooks/tdcs_sensor_comprehensive_v26_public.ipynb) ·
+[Sensor suite (S00–S13)](../notebooks/tdcs_sensor_comprehensive_v26_public.ipynb) ·
 [Historical method scores](tdcs-v31/metrics.csv)
 
 The strongest exploratory TDCS blend before the paired-crop comparison had
@@ -31,6 +31,21 @@ Walking ranking loss; M23 is its cross-entropy control. The [predeclared
 comparison](tdcs-v31/plan.json) fixes the folds, training budget, and blend
 weights. The [launch record](tdcs-v31/launch.json) is a point-in-time receipt,
 not a live status or score.
+
+S12's audited standalone scores were **0.186695 StartHesitation AP**,
+**0.212537 Walking AP**, and **0.199616 mAP**. Its best Walking blend
+(10% ungated S12) scored 0.287296 AP, below the 0.305380 M22 blend. None
+of the 12 S12 blends improved either exploratory head. S12 offered usable
+ranking pairs in 29.94% of its microbatches, versus 6.51% in S11; more
+exposure did not by itself improve the Walking score over M22. M23's
+cross-entropy control is still needed to separate the effect of sampling
+from the effect of ranking. [Audited S12 checkpoint](tdcs-v31/s12-interim.json).
+
+The sensor notebook now includes **S13**, a follow-up with the original M22
+natural crops and weak Event warmup. It tests an extra conditional Walking
+loss on already annotated FOG frames. It does not add paired crops or
+ranking. S13 has no audited real-data score yet.
+[Predeclared S13 plan](../results/tdcs_v32_conditional_subtype_plan.json).
 
 ## Reproduction
 
